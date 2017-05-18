@@ -10,7 +10,7 @@ WORKDIR /opt
 ### update the repository source list and install dependent packages
 RUN apt-get update  -y                                  && \
     apt-get install -y git                              && \
-    git clone https://github.com/mwgrassgreen/dpTDT.git && \
+    git clone https://github.com/mwgrassgreen/dpTDT     && \
     bash /opt/dpTDT/shell/provision.sh 
 
 ### set a working directory to /opt/dpTDT

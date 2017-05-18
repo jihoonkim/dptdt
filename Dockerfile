@@ -11,7 +11,7 @@ WORKDIR /opt
 RUN apt-get update  -y                                  && \
     apt-get install -y git                              && \
     git clone https://github.com/mwgrassgreen/dpTDT.git && \
-    bash /opt/dpTDT/provision.sh 
+    bash /opt/dpTDT/shell/provision.sh 
 
 ### set a working directory to /opt/dpTDT
 WORKDIR /opt/dpTDT/data

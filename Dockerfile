@@ -1,5 +1,5 @@
 ### set the base image to Ubuntu
-FROM ubuntu:16.04
+FROM j5kim/r-base:latest
 
 ### File author / maintainer
 MAINTAINER Jihoon Kim "j5kim@ucsd.edu"
@@ -10,8 +10,8 @@ WORKDIR /opt
 ### update the repository source list and install dependent packages
 RUN apt-get update  -y                                  && \
     apt-get install -y git                              && \
-    git clone https://github.com/mwgrassgreen/dpTDT     && \
+    git clone https://github.com/mwgrassgreen/dpTDT.git && \
     bash /opt/dpTDT/shell/provision.sh 
 
 ### set a working directory to /opt/dpTDT
-WORKDIR /opt/dpTDT/data
+WORKDIR /opt/dpTDT

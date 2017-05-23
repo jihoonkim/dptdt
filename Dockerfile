@@ -13,4 +13,4 @@ RUN apt-get update  -y                                  && \
     git clone https://github.com/mwgrassgreen/dpTDT.git 
 
 ### set a working directory to /opt/dpTDT
-WORKDIR /opt/dpTDT
+WORKDIR /root
